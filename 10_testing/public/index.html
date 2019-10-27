@@ -1,0 +1,54 @@
+<html>
+        <meta charset="utf-8"/>
+<head>
+<title> Client Side </title>
+
+<link type="text/css" rel="stylesheet" href="css/mycss.css"/>
+<div class="tab">
+        <button class="tablinks" onclick="openInfo(event, 'Name')">Name</button>
+        <button class="tablinks" onclick="openInfo(event, 'Address')">Address</button>
+        <button class="tablinks" onclick="openInfo(event, 'Contact')">Contact</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="Name" class="tabcontent">
+        <h3>Dishan Gohel</h3>
+        <p>My hobbies include playing drums and cooking.</p>
+      </div>
+      
+      <div id="Address" class="tabcontent">
+        <h3>Scarborough</h3>
+        <p>135 Cicerella Cres</p>
+      </div>
+      
+      <div id="Contact" class="tabcontent">
+        <h3>Phone Number/Email</h3>
+        <p>dishangohel16@gmail.com</p>
+      </div>
+</head>
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD9ybMFt9Az0doR_Yo1TL2lRj9b_pyVP9U",
+    authDomain: "testin-lab1.firebaseapp.com",
+    databaseURL: "https://testin-lab1.firebaseio.com",
+    projectId: "testin-lab1",
+    storageBucket: "testin-lab1.appspot.com",
+    messagingSenderId: "791750869796",
+    appId: "1:791750869796:web:022d138e693bd710eaa9b1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+<script src="js/myScript.js"> </script>
+
+</html>
